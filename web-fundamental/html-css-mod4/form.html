@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with fieldset and legend</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            padding-top: 10px;
+        }
+        h2 {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <form>
+                <h2>Registration Form</h2>
+                <!--Username-->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username">
+                <br>
+                <br>
+
+                <!--Password-->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <br>
+                <br>
+                
+                <!--Email-->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+                <br>
+                <br>
+
+                <!--Radio with fieldset-->
+                <fieldset>
+                   <legend>Gender:</legend>
+                   <label for="gender">Gender:</label>
+                   <input type="radio" id="male" name="gender" value="male">
+                   <label for="male">Male</label>
+                   <input type="radio" id="female" name="gender" value="female">
+                   <label for="female">Female</label>
+                </fieldset>
+                <br>
+
+                <!--Checkbox with fieldset-->
+                <fieldset>
+                   <legend>Nationality:</legend>
+                   <input type="checkbox" id="bangladeshi" name="nationality" value="bangladeshi">
+                   <label for="bangladeshi">Bangladeshi</label>
+                   <br>
+                   <input type="checkbox" id="indian" name="nationality" value="indian">
+                   <label for="indian">Indian</label>
+                   <br>
+                   <input type="checkbox" id="sri-lankan" name="nationality" value="sri-lankan">
+                   <label for="sri-lankan">Sri Lankan</label>
+                   <br>
+                   <input type="checkbox" id="pakistani" name="nationality" value="pakistani">
+                   <label for="pakistani">Pakistani</label>
+                </fieldset>
+                <br>
+
+                <!--with required-->
+                <label for="required">Required</label>
+                <input type="text" id="required" name="required" placeholder="Required" required>
+                <br>
+                <br>
+
+                <!--Dropdown-->
+                <label for="role">Role</label>
+                <select id="role" name="role">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="Professional">Professional</option>
+                </select>
+                <br>
+                <br>
+
+                <!--Submit and Clear-->
+                <input type="Submit" value="Submit"> 
+                <input type="Reset" value="Clear">
+            </form>
+    </main>
+</body>
+</html>
