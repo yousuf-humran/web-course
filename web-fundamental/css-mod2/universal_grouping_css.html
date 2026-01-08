@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal CSS Example</title>
+
+    <style>
+        /* Universal selector
+           Applies styles to all elements */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Grouping class selectors
+           Same styles applied to multiple classes */
+        .highlight, .change-color {
+            color: rgb(2, 2, 2);
+            background-color: teal;
+            padding: 8px;
+            margin: 10px 0;
+        }
+
+        /* Individual class customization */
+        .highlight {
+            font-weight: bold;
+        }
+
+        .change-color {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 class="highlight">Highlighted text</h2>
+    <p class="change-color">Text with changed color</p>
+
+</body>
+</html>

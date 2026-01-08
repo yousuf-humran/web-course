@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS - Margins</title>
+
+    <style>
+        *{
+            margin-right: 100px;
+        }
+
+        /* Margin: auto */
+        .margin-auto {
+            width: 50%;
+            margin: auto;
+            border: 2px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Margin: 2 values (top/bottom | left/right) */
+        .margin-2 {
+            margin: 50px 80px;
+            border: 2px solid teal;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Margin: 4 values (top | right | bottom | left) */
+        .margin-4 {
+            margin: 50px 20px 30px 10px;
+            border: 2px solid navy;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Internal CSS - Margins</h1>
+
+    <p class="margin-auto">
+        Margin: auto (center horizontally)
+    </p>
+
+    <div class="margin-2">
+        Margin: 50px (top/bottom), 80px (left/right)
+    </div>
+
+    <div class="margin-4">
+        Margin: 50px (top), 20px (right), 30px (bottom), 10px (left)
+    </div>
+
+</body>
+</html>

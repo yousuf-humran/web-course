@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html CSS Practice</title>
+    <style>
+        *{
+            font-family: Georgia;
+        }
+        .highlight{
+            background-color: yellow;
+            font-weight: bold;
+        }
+        .margin{
+            margin: 20px 30px 40px 50px; /* margin does not accept color */
+            background-color: aqua;
+        }
+        .border{
+            border: 10px solid black;  /* without solid, dotted or dashed, color will not work */
+            padding: 0px;
+            border-radius: 40px;
+        }
+        .a, .b{
+            color: black;
+            background-color: yellow;
+        }
+        .a{
+            color: red; /* only the conflicting code changes, single class gets priority */
+        }
+        .b{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p class="highlight">Highlight</p>
+    <p class="margin">Margin</p>
+    <p class="border">Border</p>
+    <p>Lorem ipsum <span class="highlight">dolores provident</span> consectetur adipisicing elit. Consequatur, numquam.</p>
+    <p class="a">Class a</p>
+    <p class="b">Class b</p>
+</body>
+</html>

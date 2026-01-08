@@ -1,0 +1,32 @@
+/* Header background image */
+.header {
+    height: 200px;
+
+    background-image: url(../images/header.jpeg); /* relative image path */
+    background-repeat: repeat-x;                  /* repeat only on X-axis */
+    background-size: cover;                       /* scale image */
+    background-position: center;                  /* image position */
+    background-color: #333;                     /* fallback color */
+
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Box shadow example */
+.card {
+    width: 250px;
+    padding: 20px;
+    margin: 50px auto;
+    background-color: white;
+    text-align: center;
+
+    /* box-shadow: x y blur color */
+    box-shadow: 10px 10px 15px gray;   /* positive shadow */
+}
+
+/* Negative shadow example */
+.card:hover {
+    box-shadow: -10px -10px 15px black; /* negative shadow */
+}

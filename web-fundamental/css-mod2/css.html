@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Example</title>
+    <style>
+        /* ID selector */
+        #best {
+            color: white;
+            background-color: green;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        /* Class selector */
+        .note {
+            color: blue;
+            background-color: lightyellow;
+            padding: 8px;
+            border-left: 3px solid orange;
+        }
+
+        .imp {
+            color: white;
+            background-color: red;
+            padding: 8px;
+        }
+
+        li{
+            color: cornflowerblue;
+            width: 40%
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Using ID --> 
+    <div id="best">This is the BEST note!</div>
+
+    <!-- Using only class "note" -->
+    <div class="note">This is a NOTE.</div>
+    <div class="note">Another NOTE element.</div>
+    <div class="note" style="font-style: italic;">Note with inline style</div>
+
+    <!-- Inline CSS -->
+    <div style="color: red; background-color: pink; padding: 5px;">
+        This is an INLINE styled note.
+    </div>
+
+    <!-- Multiple classes on same element + inline style -->
+    <div class="note imp" style="font-weight: bold;">
+        Note with multiple classes (note + imp) and inline style
+    </div>
+
+    <!--List-->
+    <ul>
+        <li>Bangladeh</li>
+        <li>India</li>
+        <li>USA</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse beatae 
+            <span style="background-color: yellow;" ;">consequatur</span> iure 
+            quos rerum consectetur quibusdam debitis, doloremque ipsum amet illo 
+            harum. Et in saepe incidunt ducimus hic itaque, esse unde volupplace
+            doloribus molestiae! Libero quaerat est nisi ipsum, quae.
+        </li>
+    </ul>
+</body>
+</html>

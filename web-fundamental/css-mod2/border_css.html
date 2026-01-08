@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS - Borders</title>
+
+    <style>
+        *{
+            margin-right: 100px;
+        }
+        
+        /* Border styles */
+        .solid-border {
+            border: 5px solid red;
+            margin-bottom: 20px;
+        }
+
+        .dotted-border {
+            border: 5px dotted green;
+            margin-bottom: 20px;
+        }
+
+        .dashed-border {
+            border: 5px dashed blue;
+            margin-bottom: 20px;
+        }
+
+        /* Border radius */
+        .rounded-border {
+            border: 5px solid purple;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Border width: 2 values (top/bottom | left/right) */
+        .border-width-2 {
+            border-style: solid;
+            border-color: orange;
+            border-width: 50px 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Border width: 3 values (top | left-right | bottom) */
+        .border-width-3 {
+            border-style: solid;
+            border-color: brown;
+            border-width: 50px 5px 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Internal CSS - Borders</h1>
+
+    <div class="solid-border">Solid border</div>
+    <div class="dotted-border">Dotted border</div>
+    <div class="dashed-border">Dashed border</div>
+
+    <div class="rounded-border">Border radius: 15px</div>
+
+    <div class="border-width-2">
+        Border width: 50px (top/bottom), 20px (left/right)
+    </div>
+
+    <div class="border-width-3">
+        Border width: 50px (top), 5px (left/right), 10px (bottom)
+    </div>
+
+</body>
+</html>
