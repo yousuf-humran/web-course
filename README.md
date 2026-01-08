@@ -12,13 +12,12 @@ strong foundation in web development.
 
 Here are some essential Git commands for initializing, managing, and pushing your projects to GitHub:
 
-``bash
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/yousuf-humran/web-course.git
-git push -u origin main ``git
+`git init`
+`git add .`
+`git commit -m "first commit"`
+`git branch -M main`
+`git remote add origin https://github.com/yousuf-humran/web-course.git`
+`git push -u origin main ``git`
 
 > These commands are fundamental for version control and keeping your projects synced with GitHub.
 
